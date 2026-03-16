@@ -1,0 +1,37 @@
+# AI Employee Vault — Bronze + Silver Tier
+# Python dependencies for all Watchers
+#
+# Install with:
+#   pip install -r requirements.txt
+
+# ── Bronze Tier ───────────────────────────────────────────────
+
+# Filesystem event monitoring (cross-platform: Windows, macOS, Linux)
+watchdog>=4.0.0
+
+# Load configuration from .env file
+python-dotenv>=1.0.0
+
+# ── Silver Tier — Gmail Watcher ───────────────────────────────
+
+# Gmail API client library
+google-api-python-client>=2.100.0
+
+# OAuth2 credential handling
+google-auth>=2.23.0
+google-auth-oauthlib>=1.1.0
+google-auth-httplib2>=0.1.1
+
+# ── Silver Tier — WhatsApp & LinkedIn (Playwright) ────────────
+
+# Browser automation (WhatsApp Web + LinkedIn)
+playwright>=1.40.0
+# After install, run: playwright install chromium
+
+# ── Silver Tier — Email MCP Server ───────────────────────────
+
+# MCP server SDK (Model Context Protocol)
+mcp>=1.0.0
+
+# YAML frontmatter parsing
+pyyaml>=6.0

@@ -1,0 +1,72 @@
+{
+  "mcpServers": {
+    "email": {
+      "command": "C:\\Users\\Ismat Zehra\\AppData\\Local\\Programs\\Python\\Python314\\python.exe",
+      "args": [
+        "C:\\Users\\Ismat Zehra\\3D Objects\\hackathon0\\AI_Employee_Vault\\watcher\\email_mcp.py"
+      ],
+      "env": {
+        "VAULT_PATH": "C:\\Users\\Ismat Zehra\\3D Objects\\hackathon0\\AI_Employee_Vault",
+        "LOG_LEVEL": "INFO"
+      },
+      "description": "Silver Tier — Gmail MCP server. Reads Inbox/ email notes and routes replies via Gmail API."
+    },
+    "social": {
+      "command": "C:\\Users\\Ismat Zehra\\AppData\\Local\\Programs\\Python\\Python314\\python.exe",
+      "args": [
+        "C:\\Users\\Ismat Zehra\\3D Objects\\hackathon0\\AI_Employee_Vault\\watcher\\facebook_poster.py",
+        "--watch"
+      ],
+      "env": {
+        "VAULT_PATH": "C:\\Users\\Ismat Zehra\\3D Objects\\hackathon0\\AI_Employee_Vault",
+        "DRY_RUN": "false",
+        "LOG_LEVEL": "INFO",
+        "FACEBOOK_POLL_INTERVAL": "300",
+        "INSTAGRAM_POLL_INTERVAL": "300",
+        "TWITTER_POLL_INTERVAL": "300"
+      },
+      "description": "Gold Tier — Social MCP. Routes social post plans (type: facebook-post | instagram-post | twitter-post) from Approved/ to the correct poster script."
+    },
+    "audit": {
+      "command": "C:\\Users\\Ismat Zehra\\AppData\\Local\\Programs\\Python\\Python314\\python.exe",
+      "args": [
+        "C:\\Users\\Ismat Zehra\\3D Objects\\hackathon0\\AI_Employee_Vault\\watcher\\weekly_audit.py"
+      ],
+      "env": {
+        "VAULT_PATH": "C:\\Users\\Ismat Zehra\\3D Objects\\hackathon0\\AI_Employee_Vault",
+        "DRY_RUN": "false",
+        "LOG_LEVEL": "INFO"
+      },
+      "description": "Gold Tier — Audit MCP. Runs weekly_audit.py to generate CEO Briefing and Accounting Audit from vault data. Trigger: run weekly audit."
+    },
+    "odoo": {
+      "command": "C:\\Users\\Ismat Zehra\\AppData\\Local\\Programs\\Python\\Python314\\python.exe",
+      "args": [
+        "C:\\Users\\Ismat Zehra\\3D Objects\\hackathon0\\AI_Employee_Vault\\watcher\\odoo_mcp.py"
+      ],
+      "env": {
+        "VAULT_PATH":      "C:\\Users\\Ismat Zehra\\3D Objects\\hackathon0\\AI_Employee_Vault",
+        "ODOO_URL":        "http://localhost:8069",
+        "ODOO_DB":         "odoo",
+        "ODOO_USERNAME":   "admin",
+        "ODOO_PASSWORD":   "admin",
+        "DRY_RUN":         "false",
+        "LOG_LEVEL":       "INFO"
+      },
+      "description": "Gold Tier — Odoo Community MCP server. Query invoices, customers, products, account balances. Create draft invoices (never auto-posted). Generate financial reports to Accounting/."
+    },
+    "ralph": {
+      "command": "C:\\Users\\Ismat Zehra\\AppData\\Local\\Programs\\Python\\Python314\\python.exe",
+      "args": [
+        "C:\\Users\\Ismat Zehra\\3D Objects\\hackathon0\\AI_Employee_Vault\\watcher\\ralph_loop.py",
+        "status"
+      ],
+      "env": {
+        "VAULT_PATH": "C:\\Users\\Ismat Zehra\\3D Objects\\hackathon0\\AI_Employee_Vault",
+        "DRY_RUN": "false",
+        "LOG_LEVEL": "INFO"
+      },
+      "description": "Gold Tier — Ralph Wiggum Loop MCP. Executes approved multi-step plans autonomously. Use: python ralph_loop.py run <plan_file>"
+    }
+  }
+}

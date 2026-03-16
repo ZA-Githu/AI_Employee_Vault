@@ -1,0 +1,46 @@
+# OAuth credentials and tokens — NEVER commit these
+client_secret_*.json
+token.json
+*.json.bak
+
+# Environment variables
+watcher/.env
+.env
+*.env
+
+# Browser session data (Playwright)
+watcher/sessions/
+sessions/
+
+# Python cache
+watcher/__pycache__/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+
+# Virtual environments
+venv/
+.venv/
+env/
+
+# Obsidian workspace data
+.obsidian/workspace
+.obsidian/workspace.json
+.obsidian/graph.json
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Logs (optional — remove this line if you want to track logs in git)
+# Logs/
+
+# SQLite databases
+*.db
+*.sqlite
+
+# Node modules (if any)
+node_modules/
