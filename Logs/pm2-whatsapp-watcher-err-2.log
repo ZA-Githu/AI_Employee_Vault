@@ -1,0 +1,150 @@
+2026-02-25 13:25:49: Traceback (most recent call last):
+2026-02-25 13:25:49:   File "C:\Users\Ismat Zehra\3D Objects\hackathon0\AI_Employee_Vault\watcher\whatsapp_watcher.py", line 448, in <module>
+2026-02-25 13:25:49:     WhatsAppWatcher(interval=args.interval, once=args.once).start()
+2026-02-25 13:25:49:     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+2026-02-25 13:25:49:   File "C:\Users\Ismat Zehra\3D Objects\hackathon0\AI_Employee_Vault\watcher\whatsapp_watcher.py", line 370, in start
+2026-02-25 13:25:49:     page.goto(WHATSAPP_URL, wait_until="domcontentloaded", timeout=PAGE_LOAD_MS)
+2026-02-25 13:25:49:     ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-02-25 13:25:49:   File "C:\Users\Ismat Zehra\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\sync_api\_generated.py", line 9054, in goto
+2026-02-25 13:25:49:     self._sync(
+2026-02-25 13:25:49:     ~~~~~~~~~~^
+2026-02-25 13:25:49:         self._impl_obj.goto(
+2026-02-25 13:25:49:         ^^^^^^^^^^^^^^^^^^^^
+2026-02-25 13:25:49:             url=url, timeout=timeout, waitUntil=wait_until, referer=referer
+2026-02-25 13:25:49:             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-02-25 13:25:49:         )
+2026-02-25 13:25:49:         ^
+2026-02-25 13:25:49:     )
+2026-02-25 13:25:49:     ^
+2026-02-25 13:25:49:   File "C:\Users\Ismat Zehra\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_sync_base.py", line 115, in _sync
+2026-02-25 13:25:49:     return task.result()
+2026-02-25 13:25:49:            ~~~~~~~~~~~^^
+2026-02-25 13:25:49:   File "C:\Users\Ismat Zehra\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_page.py", line 552, in goto
+2026-02-25 13:25:49:     return await self._main_frame.goto(**locals_to_params(locals()))
+2026-02-25 13:25:49:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-02-25 13:25:49:   File "C:\Users\Ismat Zehra\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_frame.py", line 153, in goto
+2026-02-25 13:25:49:     await self._channel.send(
+2026-02-25 13:25:49:         "goto", self._navigation_timeout, locals_to_params(locals())
+2026-02-25 13:25:49:     )
+2026-02-25 13:25:49:   File "C:\Users\Ismat Zehra\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_connection.py", line 69, in send
+2026-02-25 13:25:49:     return await self._connection.wrap_api_call(
+2026-02-25 13:25:49:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-02-25 13:25:49:     ...<3 lines>...
+2026-02-25 13:25:49:     )
+2026-02-25 13:25:49:     ^
+2026-02-25 13:25:49:   File "C:\Users\Ismat Zehra\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_connection.py", line 559, in wrap_api_call
+2026-02-25 13:25:49:     raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+2026-02-25 13:25:49: playwright._impl._errors.TimeoutError: Page.goto: Timeout 30000ms exceeded.
+2026-02-25 13:25:49: Call log:
+2026-02-25 13:25:49:   - navigating to "https://web.whatsapp.com/", waiting until "domcontentloaded"
+2026-02-25 13:25:49: 
+2026-02-25 13:26:28: 2026-02-25 13:26:28  [INFO    ]  WhatsAppWatcher � Waiting for WhatsApp Web to load ...
+2026-02-25 13:26:56: 2026-02-25 13:26:56  [INFO    ]  WhatsAppWatcher � WhatsApp Web ready.
+2026-02-25 13:26:56: 2026-02-25 13:26:56  [INFO    ]  WhatsAppWatcher � Watching WhatsApp every 60s. Ctrl+C to stop.
+2026-02-25 13:26:56: 
+2026-02-25 13:26:58: 2026-02-25 13:26:58  [INFO    ]  WhatsAppWatcher � No unread messages found.
+2026-02-25 13:28:12: 2026-02-25 13:28:12  [INFO    ]  WhatsAppWatcher � Found 3 unread chat(s).
+2026-02-25 13:28:14: 2026-02-25 13:28:14  [WARNING ]  WhatsAppWatcher � No messages extracted from chat: Unknown Contact
+2026-02-25 13:28:19: 2026-02-25 13:28:19  [WARNING ]  WhatsAppWatcher � No messages extracted from chat: Unknown Contact
+2026-02-25 13:28:25: 2026-02-25 13:28:25  [WARNING ]  WhatsAppWatcher � No messages extracted from chat: Unknown Contact
+2026-02-25 13:29:33: 2026-02-25 13:29:33  [INFO    ]  WhatsAppWatcher � No unread messages found.
+2026-02-25 13:30:35: 2026-02-25 13:30:35  [INFO    ]  WhatsAppWatcher � No unread messages found.
+2026-02-25 13:31:44: 2026-02-25 13:31:44  [INFO    ]  WhatsAppWatcher � No unread messages found.
+2026-02-25 13:32:45: 2026-02-25 13:32:45  [INFO    ]  WhatsAppWatcher � No unread messages found.
+2026-02-25 13:33:55: 2026-02-25 13:33:55  [INFO    ]  WhatsAppWatcher � No unread messages found.
+2026-02-25 13:34:59: 2026-02-25 13:34:59  [INFO    ]  WhatsAppWatcher � No unread messages found.
+2026-02-25 13:36:05: 2026-02-25 13:36:05  [INFO    ]  WhatsAppWatcher � No unread messages found.
+2026-02-25 13:37:09: 2026-02-25 13:37:09  [INFO    ]  WhatsAppWatcher � No unread messages found.
+2026-02-25 13:38:14: 2026-02-25 13:38:14  [INFO    ]  WhatsAppWatcher � No unread messages found.
+2026-02-25 13:39:19: 2026-02-25 13:39:19  [INFO    ]  WhatsAppWatcher � No unread messages found.
+2026-02-25 13:40:23: 2026-02-25 13:40:23  [INFO    ]  WhatsAppWatcher � No unread messages found.
+2026-02-25 13:41:29: 2026-02-25 13:41:29  [WARNING ]  WhatsAppWatcher � Error finding unread chats: Page.query_selector_all: Target page, context or browser has been closed
+2026-02-25 13:41:29: 2026-02-25 13:41:29  [INFO    ]  WhatsAppWatcher � No unread messages found.
+2026-02-25 13:42:31: 2026-02-25 13:42:31  [WARNING ]  WhatsAppWatcher � Error finding unread chats: Page.query_selector_all: Target page, context or browser has been closed
+2026-02-25 13:42:31: 2026-02-25 13:42:31  [INFO    ]  WhatsAppWatcher � No unread messages found.
+2026-02-25 13:43:38: 2026-02-25 13:43:38  [WARNING ]  WhatsAppWatcher � Error finding unread chats: Page.query_selector_all: Target page, context or browser has been closed
+2026-02-25 13:43:38: 2026-02-25 13:43:38  [INFO    ]  WhatsAppWatcher � No unread messages found.
+2026-02-25 13:44:42: 2026-02-25 13:44:42  [WARNING ]  WhatsAppWatcher � Error finding unread chats: Page.query_selector_all: Target page, context or browser has been closed
+2026-02-25 13:44:42: 2026-02-25 13:44:42  [INFO    ]  WhatsAppWatcher � No unread messages found.
+2026-02-25 13:45:49: 2026-02-25 13:45:49  [WARNING ]  WhatsAppWatcher � Error finding unread chats: Page.query_selector_all: Target page, context or browser has been closed
+2026-02-25 13:45:49: 2026-02-25 13:45:49  [INFO    ]  WhatsAppWatcher � No unread messages found.
+2026-02-25 13:46:51: 2026-02-25 13:46:51  [WARNING ]  WhatsAppWatcher � Error finding unread chats: Page.query_selector_all: Target page, context or browser has been closed
+2026-02-25 13:46:51: 2026-02-25 13:46:51  [INFO    ]  WhatsAppWatcher � No unread messages found.
+2026-02-25 13:47:54: 2026-02-25 13:47:54  [WARNING ]  WhatsAppWatcher � Error finding unread chats: Page.query_selector_all: Target page, context or browser has been closed
+2026-02-25 13:47:54: 2026-02-25 13:47:54  [INFO    ]  WhatsAppWatcher � No unread messages found.
+2026-02-25 13:48:57: 2026-02-25 13:48:57  [WARNING ]  WhatsAppWatcher � Error finding unread chats: Page.query_selector_all: Target page, context or browser has been closed
+2026-02-25 13:48:57: 2026-02-25 13:48:57  [INFO    ]  WhatsAppWatcher � No unread messages found.
+2026-02-25 13:50:06: 2026-02-25 13:50:06  [WARNING ]  WhatsAppWatcher � Error finding unread chats: Page.query_selector_all: Target page, context or browser has been closed
+2026-02-25 13:50:06: 2026-02-25 13:50:06  [INFO    ]  WhatsAppWatcher � No unread messages found.
+2026-02-25 13:51:12: 2026-02-25 13:51:12  [WARNING ]  WhatsAppWatcher � Error finding unread chats: Page.query_selector_all: Target page, context or browser has been closed
+2026-02-25 13:51:12: 2026-02-25 13:51:12  [INFO    ]  WhatsAppWatcher � No unread messages found.
+2026-02-25 13:52:15: 2026-02-25 13:52:15  [WARNING ]  WhatsAppWatcher � Error finding unread chats: Page.query_selector_all: Target page, context or browser has been closed
+2026-02-25 13:52:15: 2026-02-25 13:52:15  [INFO    ]  WhatsAppWatcher � No unread messages found.
+2026-02-25 13:53:21: 2026-02-25 13:53:21  [WARNING ]  WhatsAppWatcher � Error finding unread chats: Page.query_selector_all: Target page, context or browser has been closed
+2026-02-25 13:53:21: 2026-02-25 13:53:21  [INFO    ]  WhatsAppWatcher � No unread messages found.
+2026-02-25 13:54:25: 2026-02-25 13:54:25  [WARNING ]  WhatsAppWatcher � Error finding unread chats: Page.query_selector_all: Target page, context or browser has been closed
+2026-02-25 13:54:25: 2026-02-25 13:54:25  [INFO    ]  WhatsAppWatcher � No unread messages found.
+2026-02-25 13:55:40: 2026-02-25 13:55:40  [WARNING ]  WhatsAppWatcher � Error finding unread chats: Page.query_selector_all: Target page, context or browser has been closed
+2026-02-25 13:55:40: 2026-02-25 13:55:40  [INFO    ]  WhatsAppWatcher � No unread messages found.
+2026-02-25 13:56:43: 2026-02-25 13:56:43  [WARNING ]  WhatsAppWatcher � Error finding unread chats: Page.query_selector_all: Target page, context or browser has been closed
+2026-02-25 13:56:43: 2026-02-25 13:56:43  [INFO    ]  WhatsAppWatcher � No unread messages found.
+2026-02-25 13:57:51: 2026-02-25 13:57:51  [WARNING ]  WhatsAppWatcher � Error finding unread chats: Page.query_selector_all: Target page, context or browser has been closed
+2026-02-25 13:57:51: 2026-02-25 13:57:51  [INFO    ]  WhatsAppWatcher � No unread messages found.
+2026-02-25 13:58:53: 2026-02-25 13:58:53  [WARNING ]  WhatsAppWatcher � Error finding unread chats: Page.query_selector_all: Target page, context or browser has been closed
+2026-02-25 13:58:53: 2026-02-25 13:58:53  [INFO    ]  WhatsAppWatcher � No unread messages found.
+2026-02-25 14:00:02: 2026-02-25 14:00:02  [WARNING ]  WhatsAppWatcher � Error finding unread chats: Page.query_selector_all: Target page, context or browser has been closed
+2026-02-25 14:00:02: 2026-02-25 14:00:02  [INFO    ]  WhatsAppWatcher � No unread messages found.
+2026-02-25 14:01:08: 2026-02-25 14:01:08  [WARNING ]  WhatsAppWatcher � Error finding unread chats: Page.query_selector_all: Target page, context or browser has been closed
+2026-02-25 14:01:08: 2026-02-25 14:01:08  [INFO    ]  WhatsAppWatcher � No unread messages found.
+2026-02-25 14:02:11: 2026-02-25 14:02:11  [WARNING ]  WhatsAppWatcher � Error finding unread chats: Page.query_selector_all: Target page, context or browser has been closed
+2026-02-25 14:02:11: 2026-02-25 14:02:11  [INFO    ]  WhatsAppWatcher � No unread messages found.
+2026-02-25 14:03:16: 2026-02-25 14:03:16  [WARNING ]  WhatsAppWatcher � Error finding unread chats: Page.query_selector_all: Target page, context or browser has been closed
+2026-02-25 14:03:16: 2026-02-25 14:03:16  [INFO    ]  WhatsAppWatcher � No unread messages found.
+2026-02-25 14:04:21: 2026-02-25 14:04:21  [WARNING ]  WhatsAppWatcher � Error finding unread chats: Page.query_selector_all: Target page, context or browser has been closed
+2026-02-25 14:04:21: 2026-02-25 14:04:21  [INFO    ]  WhatsAppWatcher � No unread messages found.
+2026-02-25 14:05:32: 2026-02-25 14:05:32  [WARNING ]  WhatsAppWatcher � Error finding unread chats: Page.query_selector_all: Target page, context or browser has been closed
+2026-02-25 14:05:32: 2026-02-25 14:05:32  [INFO    ]  WhatsAppWatcher � No unread messages found.
+2026-02-25 14:06:37: 2026-02-25 14:06:37  [WARNING ]  WhatsAppWatcher � Error finding unread chats: Page.query_selector_all: Target page, context or browser has been closed
+2026-02-25 14:06:37: 2026-02-25 14:06:37  [INFO    ]  WhatsAppWatcher � No unread messages found.
+2026-02-25 14:07:52: 2026-02-25 14:07:52  [WARNING ]  WhatsAppWatcher � Error finding unread chats: Page.query_selector_all: Target page, context or browser has been closed
+2026-02-25 14:07:52: 2026-02-25 14:07:52  [INFO    ]  WhatsAppWatcher � No unread messages found.
+2026-02-25 14:09:05: 2026-02-25 14:09:05  [WARNING ]  WhatsAppWatcher � Error finding unread chats: Page.query_selector_all: Target page, context or browser has been closed
+2026-02-25 14:09:05: 2026-02-25 14:09:05  [INFO    ]  WhatsAppWatcher � No unread messages found.
+2026-02-25 14:10:14: 2026-02-25 14:10:14  [WARNING ]  WhatsAppWatcher � Error finding unread chats: Page.query_selector_all: Target page, context or browser has been closed
+2026-02-25 14:10:14: 2026-02-25 14:10:14  [INFO    ]  WhatsAppWatcher � No unread messages found.
+2026-02-25 14:11:16: 2026-02-25 14:11:16  [WARNING ]  WhatsAppWatcher � Error finding unread chats: Page.query_selector_all: Target page, context or browser has been closed
+2026-02-25 14:11:16: 2026-02-25 14:11:16  [INFO    ]  WhatsAppWatcher � No unread messages found.
+2026-02-25 14:12:33: 2026-02-25 14:12:33  [WARNING ]  WhatsAppWatcher � Error finding unread chats: Page.query_selector_all: Target page, context or browser has been closed
+2026-02-25 14:12:33: 2026-02-25 14:12:33  [INFO    ]  WhatsAppWatcher � No unread messages found.
+2026-02-25 14:13:44: 2026-02-25 14:13:44  [WARNING ]  WhatsAppWatcher � Error finding unread chats: Page.query_selector_all: Target page, context or browser has been closed
+2026-02-25 14:13:44: 2026-02-25 14:13:44  [INFO    ]  WhatsAppWatcher � No unread messages found.
+2026-02-25 14:14:54: 2026-02-25 14:14:54  [WARNING ]  WhatsAppWatcher � Error finding unread chats: Page.query_selector_all: Target page, context or browser has been closed
+2026-02-25 14:14:54: 2026-02-25 14:14:54  [INFO    ]  WhatsAppWatcher � No unread messages found.
+2026-02-25 14:16:02: 2026-02-25 14:16:02  [WARNING ]  WhatsAppWatcher � Error finding unread chats: Page.query_selector_all: Target page, context or browser has been closed
+2026-02-25 14:16:02: 2026-02-25 14:16:02  [INFO    ]  WhatsAppWatcher � No unread messages found.
+2026-02-25 14:17:07: 2026-02-25 14:17:07  [WARNING ]  WhatsAppWatcher � Error finding unread chats: Page.query_selector_all: Target page, context or browser has been closed
+2026-02-25 14:17:07: 2026-02-25 14:17:07  [INFO    ]  WhatsAppWatcher � No unread messages found.
+2026-02-25 14:18:20: 2026-02-25 14:18:20  [WARNING ]  WhatsAppWatcher � Error finding unread chats: Page.query_selector_all: Target page, context or browser has been closed
+2026-02-25 14:18:20: 2026-02-25 14:18:20  [INFO    ]  WhatsAppWatcher � No unread messages found.
+2026-02-25 14:19:31: 2026-02-25 14:19:31  [WARNING ]  WhatsAppWatcher � Error finding unread chats: Page.query_selector_all: Target page, context or browser has been closed
+2026-02-25 14:19:31: 2026-02-25 14:19:31  [INFO    ]  WhatsAppWatcher � No unread messages found.
+2026-02-25 14:20:47: 2026-02-25 14:20:47  [WARNING ]  WhatsAppWatcher � Error finding unread chats: Page.query_selector_all: Target page, context or browser has been closed
+2026-02-25 14:20:47: 2026-02-25 14:20:47  [INFO    ]  WhatsAppWatcher � No unread messages found.
+2026-02-25 14:21:54: 2026-02-25 14:21:54  [WARNING ]  WhatsAppWatcher � Error finding unread chats: Page.query_selector_all: Target page, context or browser has been closed
+2026-02-25 14:21:54: 2026-02-25 14:21:54  [INFO    ]  WhatsAppWatcher � No unread messages found.
+2026-02-25 14:23:01: 2026-02-25 14:23:01  [WARNING ]  WhatsAppWatcher � Error finding unread chats: Page.query_selector_all: Target page, context or browser has been closed
+2026-02-25 14:23:01: 2026-02-25 14:23:01  [INFO    ]  WhatsAppWatcher � No unread messages found.
+2026-02-25 14:24:10: 2026-02-25 14:24:10  [WARNING ]  WhatsAppWatcher � Error finding unread chats: Page.query_selector_all: Target page, context or browser has been closed
+2026-02-25 14:24:10: 2026-02-25 14:24:10  [INFO    ]  WhatsAppWatcher � No unread messages found.
+2026-02-25 14:25:22: 2026-02-25 14:25:22  [WARNING ]  WhatsAppWatcher � Error finding unread chats: Page.query_selector_all: Target page, context or browser has been closed
+2026-02-25 14:25:22: 2026-02-25 14:25:22  [INFO    ]  WhatsAppWatcher � No unread messages found.
+2026-02-25 14:26:31: 2026-02-25 14:26:31  [WARNING ]  WhatsAppWatcher � Error finding unread chats: Page.query_selector_all: Target page, context or browser has been closed
+2026-02-25 14:26:31: 2026-02-25 14:26:31  [INFO    ]  WhatsAppWatcher � No unread messages found.
+2026-02-25 14:27:34: 2026-02-25 14:27:34  [WARNING ]  WhatsAppWatcher � Error finding unread chats: Page.query_selector_all: Target page, context or browser has been closed
+2026-02-25 14:27:34: 2026-02-25 14:27:34  [INFO    ]  WhatsAppWatcher � No unread messages found.
+2026-02-25 14:28:46: 2026-02-25 14:28:46  [WARNING ]  WhatsAppWatcher � Error finding unread chats: Page.query_selector_all: Target page, context or browser has been closed
+2026-02-25 14:28:46: 2026-02-25 14:28:46  [INFO    ]  WhatsAppWatcher � No unread messages found.
+2026-02-25 14:29:53: 2026-02-25 14:29:53  [WARNING ]  WhatsAppWatcher � Error finding unread chats: Page.query_selector_all: Target page, context or browser has been closed
+2026-02-25 14:29:53: 2026-02-25 14:29:53  [INFO    ]  WhatsAppWatcher � No unread messages found.
+2026-02-25 14:31:03: 2026-02-25 14:31:03  [WARNING ]  WhatsAppWatcher � Error finding unread chats: Page.query_selector_all: Target page, context or browser has been closed
+2026-02-25 14:31:03: 2026-02-25 14:31:03  [INFO    ]  WhatsAppWatcher � No unread messages found.

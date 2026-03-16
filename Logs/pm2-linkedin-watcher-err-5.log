@@ -1,0 +1,485 @@
+2026-02-25 13:33:28: 2026-02-25 13:33:28  [INFO    ]  LinkedInWatcher � LinkedIn: not logged in. Waiting for manual login ...
+2026-02-25 13:33:28: 2026-02-25 13:33:28  [INFO    ]  LinkedInWatcher �   \u2192 Please sign into LinkedIn in the browser window.
+2026-02-25 13:34:28: 2026-02-25 13:34:28  [ERROR   ]  LinkedInWatcher � LinkedIn login timed out.
+2026-02-25 13:35:04: 2026-02-25 13:35:04  [INFO    ]  LinkedInWatcher � LinkedIn: not logged in. Waiting for manual login ...
+2026-02-25 13:35:04: 2026-02-25 13:35:04  [INFO    ]  LinkedInWatcher �   \u2192 Please sign into LinkedIn in the browser window.
+2026-02-25 13:36:04: 2026-02-25 13:36:04  [ERROR   ]  LinkedInWatcher � LinkedIn login timed out.
+2026-02-25 13:36:37: 2026-02-25 13:36:37  [INFO    ]  LinkedInWatcher � LinkedIn: not logged in. Waiting for manual login ...
+2026-02-25 13:36:37: 2026-02-25 13:36:37  [INFO    ]  LinkedInWatcher �   \u2192 Please sign into LinkedIn in the browser window.
+2026-02-25 13:37:37: 2026-02-25 13:37:37  [ERROR   ]  LinkedInWatcher � LinkedIn login timed out.
+2026-02-25 13:38:12: 2026-02-25 13:38:12  [INFO    ]  LinkedInWatcher � LinkedIn: not logged in. Waiting for manual login ...
+2026-02-25 13:38:12: 2026-02-25 13:38:12  [INFO    ]  LinkedInWatcher �   \u2192 Please sign into LinkedIn in the browser window.
+2026-02-25 13:39:12: 2026-02-25 13:39:12  [ERROR   ]  LinkedInWatcher � LinkedIn login timed out.
+2026-02-25 13:40:00: 2026-02-25 13:40:00  [INFO    ]  LinkedInWatcher � LinkedIn: not logged in. Waiting for manual login ...
+2026-02-25 13:40:00: 2026-02-25 13:40:00  [INFO    ]  LinkedInWatcher �   \u2192 Please sign into LinkedIn in the browser window.
+2026-02-25 13:41:00: 2026-02-25 13:41:00  [ERROR   ]  LinkedInWatcher � LinkedIn login timed out.
+2026-02-25 13:41:49: 2026-02-25 13:41:49  [INFO    ]  LinkedInWatcher � LinkedIn: not logged in. Waiting for manual login ...
+2026-02-25 13:41:49: 2026-02-25 13:41:49  [INFO    ]  LinkedInWatcher �   \u2192 Please sign into LinkedIn in the browser window.
+2026-02-25 13:42:49: 2026-02-25 13:42:49  [ERROR   ]  LinkedInWatcher � LinkedIn login timed out.
+2026-02-25 13:44:06: Traceback (most recent call last):
+2026-02-25 13:44:06:   File "C:\Users\Ismat Zehra\3D Objects\hackathon0\AI_Employee_Vault\watcher\linkedin_watcher.py", line 579, in <module>
+2026-02-25 13:44:06:     LinkedInWatcher(interval=args.interval, once=args.once).start()
+2026-02-25 13:44:06:     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+2026-02-25 13:44:06:   File "C:\Users\Ismat Zehra\3D Objects\hackathon0\AI_Employee_Vault\watcher\linkedin_watcher.py", line 500, in start
+2026-02-25 13:44:06:     if not self._wait_for_login(page):
+2026-02-25 13:44:06:            ~~~~~~~~~~~~~~~~~~~~^^^^^^
+2026-02-25 13:44:06:   File "C:\Users\Ismat Zehra\3D Objects\hackathon0\AI_Employee_Vault\watcher\linkedin_watcher.py", line 233, in _wait_for_login
+2026-02-25 13:44:06:     page.wait_for_selector(
+2026-02-25 13:44:06:     ~~~~~~~~~~~~~~~~~~~~~~^
+2026-02-25 13:44:06:         '[data-control-name="feed_nav_home"], .feed-identity-module, '
+2026-02-25 13:44:06:         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-02-25 13:44:06:         '[aria-label="Home"], .share-box-feed-entry__trigger',
+2026-02-25 13:44:06:         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-02-25 13:44:06:         timeout=10_000,
+2026-02-25 13:44:06:         ^^^^^^^^^^^^^^^
+2026-02-25 13:44:06:     )
+2026-02-25 13:44:06:     ^
+2026-02-25 13:44:06:   File "C:\Users\Ismat Zehra\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\sync_api\_generated.py", line 8217, in wait_for_selector
+2026-02-25 13:44:06:     self._sync(
+2026-02-25 13:44:06:     ~~~~~~~~~~^
+2026-02-25 13:44:06:         self._impl_obj.wait_for_selector(
+2026-02-25 13:44:06:         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-02-25 13:44:06:             selector=selector, timeout=timeout, state=state, strict=strict
+2026-02-25 13:44:06:             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-02-25 13:44:06:         )
+2026-02-25 13:44:06:         ^
+2026-02-25 13:44:06:     )
+2026-02-25 13:44:06:     ^
+2026-02-25 13:44:06:   File "C:\Users\Ismat Zehra\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_sync_base.py", line 115, in _sync
+2026-02-25 13:44:06:     return task.result()
+2026-02-25 13:44:06:            ~~~~~~~~~~~^^
+2026-02-25 13:44:06:   File "C:\Users\Ismat Zehra\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_page.py", line 419, in wait_for_selector
+2026-02-25 13:44:06:     return await self._main_frame.wait_for_selector(**locals_to_params(locals()))
+2026-02-25 13:44:06:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-02-25 13:44:06:   File "C:\Users\Ismat Zehra\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_frame.py", line 369, in wait_for_selector
+2026-02-25 13:44:06:     await self._channel.send(
+2026-02-25 13:44:06:         "waitForSelector", self._timeout, locals_to_params(locals())
+2026-02-25 13:44:06:     )
+2026-02-25 13:44:06:   File "C:\Users\Ismat Zehra\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_connection.py", line 69, in send
+2026-02-25 13:44:06:     return await self._connection.wrap_api_call(
+2026-02-25 13:44:06:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-02-25 13:44:06:     ...<3 lines>...
+2026-02-25 13:44:06:     )
+2026-02-25 13:44:06:     ^
+2026-02-25 13:44:06:   File "C:\Users\Ismat Zehra\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_connection.py", line 559, in wrap_api_call
+2026-02-25 13:44:06:     raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+2026-02-25 13:44:06: playwright._impl._errors.TargetClosedError: Page.wait_for_selector: Target page, context or browser has been closed
+2026-02-25 13:44:06: Call log:
+2026-02-25 13:44:06:   - waiting for locator("[data-control-name=\"feed_nav_home\"], .feed-identity-module, [aria-label=\"Home\"], .share-box-feed-entry__trigger") to be visible
+2026-02-25 13:44:06: 
+2026-02-25 13:44:35: Traceback (most recent call last):
+2026-02-25 13:44:35:   File "C:\Users\Ismat Zehra\3D Objects\hackathon0\AI_Employee_Vault\watcher\linkedin_watcher.py", line 579, in <module>
+2026-02-25 13:44:35:     LinkedInWatcher(interval=args.interval, once=args.once).start()
+2026-02-25 13:44:35:     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+2026-02-25 13:44:35:   File "C:\Users\Ismat Zehra\3D Objects\hackathon0\AI_Employee_Vault\watcher\linkedin_watcher.py", line 500, in start
+2026-02-25 13:44:35:     if not self._wait_for_login(page):
+2026-02-25 13:44:35:            ~~~~~~~~~~~~~~~~~~~~^^^^^^
+2026-02-25 13:44:35:   File "C:\Users\Ismat Zehra\3D Objects\hackathon0\AI_Employee_Vault\watcher\linkedin_watcher.py", line 233, in _wait_for_login
+2026-02-25 13:44:35:     page.wait_for_selector(
+2026-02-25 13:44:35:     ~~~~~~~~~~~~~~~~~~~~~~^
+2026-02-25 13:44:35:         '[data-control-name="feed_nav_home"], .feed-identity-module, '
+2026-02-25 13:44:35:         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-02-25 13:44:35:         '[aria-label="Home"], .share-box-feed-entry__trigger',
+2026-02-25 13:44:35:         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-02-25 13:44:35:         timeout=10_000,
+2026-02-25 13:44:35:         ^^^^^^^^^^^^^^^
+2026-02-25 13:44:35:     )
+2026-02-25 13:44:35:     ^
+2026-02-25 13:44:35:   File "C:\Users\Ismat Zehra\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\sync_api\_generated.py", line 8217, in wait_for_selector
+2026-02-25 13:44:35:     self._sync(
+2026-02-25 13:44:35:     ~~~~~~~~~~^
+2026-02-25 13:44:35:         self._impl_obj.wait_for_selector(
+2026-02-25 13:44:35:         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-02-25 13:44:35:             selector=selector, timeout=timeout, state=state, strict=strict
+2026-02-25 13:44:35:             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-02-25 13:44:35:         )
+2026-02-25 13:44:35:         ^
+2026-02-25 13:44:35:     )
+2026-02-25 13:44:35:     ^
+2026-02-25 13:44:35:   File "C:\Users\Ismat Zehra\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_sync_base.py", line 115, in _sync
+2026-02-25 13:44:35:     return task.result()
+2026-02-25 13:44:35:            ~~~~~~~~~~~^^
+2026-02-25 13:44:35:   File "C:\Users\Ismat Zehra\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_page.py", line 419, in wait_for_selector
+2026-02-25 13:44:35:     return await self._main_frame.wait_for_selector(**locals_to_params(locals()))
+2026-02-25 13:44:35:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-02-25 13:44:35:   File "C:\Users\Ismat Zehra\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_frame.py", line 369, in wait_for_selector
+2026-02-25 13:44:35:     await self._channel.send(
+2026-02-25 13:44:35:         "waitForSelector", self._timeout, locals_to_params(locals())
+2026-02-25 13:44:35:     )
+2026-02-25 13:44:35:   File "C:\Users\Ismat Zehra\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_connection.py", line 69, in send
+2026-02-25 13:44:35:     return await self._connection.wrap_api_call(
+2026-02-25 13:44:35:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-02-25 13:44:35:     ...<3 lines>...
+2026-02-25 13:44:35:     )
+2026-02-25 13:44:35:     ^
+2026-02-25 13:44:35:   File "C:\Users\Ismat Zehra\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_connection.py", line 559, in wrap_api_call
+2026-02-25 13:44:35:     raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+2026-02-25 13:44:35: playwright._impl._errors.TargetClosedError: Page.wait_for_selector: Target page, context or browser has been closed
+2026-02-25 13:44:35: Call log:
+2026-02-25 13:44:35:   - waiting for locator("[data-control-name=\"feed_nav_home\"], .feed-identity-module, [aria-label=\"Home\"], .share-box-feed-entry__trigger") to be visible
+2026-02-25 13:44:35: 
+2026-02-25 13:45:07: 2026-02-25 13:45:07  [INFO    ]  LinkedInWatcher � LinkedIn: not logged in. Waiting for manual login ...
+2026-02-25 13:45:07: 2026-02-25 13:45:07  [INFO    ]  LinkedInWatcher �   \u2192 Please sign into LinkedIn in the browser window.
+2026-02-25 13:46:07: 2026-02-25 13:46:07  [ERROR   ]  LinkedInWatcher � LinkedIn login timed out.
+2026-02-25 13:46:45: 2026-02-25 13:46:45  [INFO    ]  LinkedInWatcher � LinkedIn: not logged in. Waiting for manual login ...
+2026-02-25 13:46:45: 2026-02-25 13:46:45  [INFO    ]  LinkedInWatcher �   \u2192 Please sign into LinkedIn in the browser window.
+2026-02-25 13:47:45: 2026-02-25 13:47:45  [ERROR   ]  LinkedInWatcher � LinkedIn login timed out.
+2026-02-25 13:48:18: 2026-02-25 13:48:18  [INFO    ]  LinkedInWatcher � LinkedIn: not logged in. Waiting for manual login ...
+2026-02-25 13:48:18: 2026-02-25 13:48:18  [INFO    ]  LinkedInWatcher �   \u2192 Please sign into LinkedIn in the browser window.
+2026-02-25 13:49:18: 2026-02-25 13:49:18  [ERROR   ]  LinkedInWatcher � LinkedIn login timed out.
+2026-02-25 13:50:47: Traceback (most recent call last):
+2026-02-25 13:50:47:   File "C:\Users\Ismat Zehra\3D Objects\hackathon0\AI_Employee_Vault\watcher\linkedin_watcher.py", line 579, in <module>
+2026-02-25 13:50:47:     LinkedInWatcher(interval=args.interval, once=args.once).start()
+2026-02-25 13:50:47:     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+2026-02-25 13:50:47:   File "C:\Users\Ismat Zehra\3D Objects\hackathon0\AI_Employee_Vault\watcher\linkedin_watcher.py", line 500, in start
+2026-02-25 13:50:47:     if not self._wait_for_login(page):
+2026-02-25 13:50:47:            ~~~~~~~~~~~~~~~~~~~~^^^^^^
+2026-02-25 13:50:47:   File "C:\Users\Ismat Zehra\3D Objects\hackathon0\AI_Employee_Vault\watcher\linkedin_watcher.py", line 233, in _wait_for_login
+2026-02-25 13:50:47:     page.wait_for_selector(
+2026-02-25 13:50:47:     ~~~~~~~~~~~~~~~~~~~~~~^
+2026-02-25 13:50:47:         '[data-control-name="feed_nav_home"], .feed-identity-module, '
+2026-02-25 13:50:47:         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-02-25 13:50:47:         '[aria-label="Home"], .share-box-feed-entry__trigger',
+2026-02-25 13:50:47:         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-02-25 13:50:47:         timeout=10_000,
+2026-02-25 13:50:47:         ^^^^^^^^^^^^^^^
+2026-02-25 13:50:47:     )
+2026-02-25 13:50:47:     ^
+2026-02-25 13:50:47:   File "C:\Users\Ismat Zehra\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\sync_api\_generated.py", line 8217, in wait_for_selector
+2026-02-25 13:50:47:     self._sync(
+2026-02-25 13:50:47:     ~~~~~~~~~~^
+2026-02-25 13:50:47:         self._impl_obj.wait_for_selector(
+2026-02-25 13:50:47:         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-02-25 13:50:47:             selector=selector, timeout=timeout, state=state, strict=strict
+2026-02-25 13:50:47:             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-02-25 13:50:47:         )
+2026-02-25 13:50:47:         ^
+2026-02-25 13:50:47:     )
+2026-02-25 13:50:47:     ^
+2026-02-25 13:50:47:   File "C:\Users\Ismat Zehra\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_sync_base.py", line 115, in _sync
+2026-02-25 13:50:47:     return task.result()
+2026-02-25 13:50:47:            ~~~~~~~~~~~^^
+2026-02-25 13:50:47:   File "C:\Users\Ismat Zehra\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_page.py", line 419, in wait_for_selector
+2026-02-25 13:50:47:     return await self._main_frame.wait_for_selector(**locals_to_params(locals()))
+2026-02-25 13:50:47:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-02-25 13:50:47:   File "C:\Users\Ismat Zehra\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_frame.py", line 369, in wait_for_selector
+2026-02-25 13:50:47:     await self._channel.send(
+2026-02-25 13:50:47:         "waitForSelector", self._timeout, locals_to_params(locals())
+2026-02-25 13:50:47:     )
+2026-02-25 13:50:47:   File "C:\Users\Ismat Zehra\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_connection.py", line 69, in send
+2026-02-25 13:50:47:     return await self._connection.wrap_api_call(
+2026-02-25 13:50:47:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-02-25 13:50:47:     ...<3 lines>...
+2026-02-25 13:50:47:     )
+2026-02-25 13:50:47:     ^
+2026-02-25 13:50:47:   File "C:\Users\Ismat Zehra\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_connection.py", line 559, in wrap_api_call
+2026-02-25 13:50:47:     raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+2026-02-25 13:50:47: playwright._impl._errors.TargetClosedError: Page.wait_for_selector: Target page, context or browser has been closed
+2026-02-25 13:50:47: Call log:
+2026-02-25 13:50:47:   - waiting for locator("[data-control-name=\"feed_nav_home\"], .feed-identity-module, [aria-label=\"Home\"], .share-box-feed-entry__trigger") to be visible
+2026-02-25 13:50:47: 
+2026-02-25 13:51:37: 2026-02-25 13:51:37  [INFO    ]  LinkedInWatcher � LinkedIn: not logged in. Waiting for manual login ...
+2026-02-25 13:51:37: 2026-02-25 13:51:37  [INFO    ]  LinkedInWatcher �   \u2192 Please sign into LinkedIn in the browser window.
+2026-02-25 13:52:37: 2026-02-25 13:52:37  [ERROR   ]  LinkedInWatcher � LinkedIn login timed out.
+2026-02-25 13:54:05: Traceback (most recent call last):
+2026-02-25 13:54:05:   File "C:\Users\Ismat Zehra\3D Objects\hackathon0\AI_Employee_Vault\watcher\linkedin_watcher.py", line 579, in <module>
+2026-02-25 13:54:05:     LinkedInWatcher(interval=args.interval, once=args.once).start()
+2026-02-25 13:54:05:     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+2026-02-25 13:54:05:   File "C:\Users\Ismat Zehra\3D Objects\hackathon0\AI_Employee_Vault\watcher\linkedin_watcher.py", line 500, in start
+2026-02-25 13:54:05:     if not self._wait_for_login(page):
+2026-02-25 13:54:05:            ~~~~~~~~~~~~~~~~~~~~^^^^^^
+2026-02-25 13:54:05:   File "C:\Users\Ismat Zehra\3D Objects\hackathon0\AI_Employee_Vault\watcher\linkedin_watcher.py", line 233, in _wait_for_login
+2026-02-25 13:54:05:     page.wait_for_selector(
+2026-02-25 13:54:05:     ~~~~~~~~~~~~~~~~~~~~~~^
+2026-02-25 13:54:05:         '[data-control-name="feed_nav_home"], .feed-identity-module, '
+2026-02-25 13:54:05:         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-02-25 13:54:05:         '[aria-label="Home"], .share-box-feed-entry__trigger',
+2026-02-25 13:54:05:         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-02-25 13:54:05:         timeout=10_000,
+2026-02-25 13:54:05:         ^^^^^^^^^^^^^^^
+2026-02-25 13:54:05:     )
+2026-02-25 13:54:05:     ^
+2026-02-25 13:54:05:   File "C:\Users\Ismat Zehra\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\sync_api\_generated.py", line 8217, in wait_for_selector
+2026-02-25 13:54:05:     self._sync(
+2026-02-25 13:54:05:     ~~~~~~~~~~^
+2026-02-25 13:54:05:         self._impl_obj.wait_for_selector(
+2026-02-25 13:54:05:         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-02-25 13:54:05:             selector=selector, timeout=timeout, state=state, strict=strict
+2026-02-25 13:54:05:             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-02-25 13:54:05:         )
+2026-02-25 13:54:05:         ^
+2026-02-25 13:54:05:     )
+2026-02-25 13:54:05:     ^
+2026-02-25 13:54:05:   File "C:\Users\Ismat Zehra\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_sync_base.py", line 115, in _sync
+2026-02-25 13:54:05:     return task.result()
+2026-02-25 13:54:05:            ~~~~~~~~~~~^^
+2026-02-25 13:54:05:   File "C:\Users\Ismat Zehra\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_page.py", line 419, in wait_for_selector
+2026-02-25 13:54:05:     return await self._main_frame.wait_for_selector(**locals_to_params(locals()))
+2026-02-25 13:54:05:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-02-25 13:54:05:   File "C:\Users\Ismat Zehra\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_frame.py", line 369, in wait_for_selector
+2026-02-25 13:54:05:     await self._channel.send(
+2026-02-25 13:54:05:         "waitForSelector", self._timeout, locals_to_params(locals())
+2026-02-25 13:54:05:     )
+2026-02-25 13:54:05:   File "C:\Users\Ismat Zehra\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_connection.py", line 69, in send
+2026-02-25 13:54:05:     return await self._connection.wrap_api_call(
+2026-02-25 13:54:05:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-02-25 13:54:05:     ...<3 lines>...
+2026-02-25 13:54:05:     )
+2026-02-25 13:54:05:     ^
+2026-02-25 13:54:05:   File "C:\Users\Ismat Zehra\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_connection.py", line 559, in wrap_api_call
+2026-02-25 13:54:05:     raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+2026-02-25 13:54:05: playwright._impl._errors.TargetClosedError: Page.wait_for_selector: Target page, context or browser has been closed
+2026-02-25 13:54:05: Call log:
+2026-02-25 13:54:05:   - waiting for locator("[data-control-name=\"feed_nav_home\"], .feed-identity-module, [aria-label=\"Home\"], .share-box-feed-entry__trigger") to be visible
+2026-02-25 13:54:05: 
+2026-02-25 13:54:53: 2026-02-25 13:54:53  [INFO    ]  LinkedInWatcher � LinkedIn: not logged in. Waiting for manual login ...
+2026-02-25 13:54:53: 2026-02-25 13:54:53  [INFO    ]  LinkedInWatcher �   \u2192 Please sign into LinkedIn in the browser window.
+2026-02-25 13:55:53: 2026-02-25 13:55:53  [ERROR   ]  LinkedInWatcher � LinkedIn login timed out.
+2026-02-25 13:56:31: Traceback (most recent call last):
+2026-02-25 13:56:31:   File "C:\Users\Ismat Zehra\3D Objects\hackathon0\AI_Employee_Vault\watcher\linkedin_watcher.py", line 579, in <module>
+2026-02-25 13:56:31:     LinkedInWatcher(interval=args.interval, once=args.once).start()
+2026-02-25 13:56:31:     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+2026-02-25 13:56:31:   File "C:\Users\Ismat Zehra\3D Objects\hackathon0\AI_Employee_Vault\watcher\linkedin_watcher.py", line 500, in start
+2026-02-25 13:56:31:     if not self._wait_for_login(page):
+2026-02-25 13:56:31:            ~~~~~~~~~~~~~~~~~~~~^^^^^^
+2026-02-25 13:56:31:   File "C:\Users\Ismat Zehra\3D Objects\hackathon0\AI_Employee_Vault\watcher\linkedin_watcher.py", line 233, in _wait_for_login
+2026-02-25 13:56:31:     page.wait_for_selector(
+2026-02-25 13:56:31:     ~~~~~~~~~~~~~~~~~~~~~~^
+2026-02-25 13:56:31:         '[data-control-name="feed_nav_home"], .feed-identity-module, '
+2026-02-25 13:56:31:         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-02-25 13:56:31:         '[aria-label="Home"], .share-box-feed-entry__trigger',
+2026-02-25 13:56:31:         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-02-25 13:56:31:         timeout=10_000,
+2026-02-25 13:56:31:         ^^^^^^^^^^^^^^^
+2026-02-25 13:56:31:     )
+2026-02-25 13:56:31:     ^
+2026-02-25 13:56:31:   File "C:\Users\Ismat Zehra\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\sync_api\_generated.py", line 8217, in wait_for_selector
+2026-02-25 13:56:31:     self._sync(
+2026-02-25 13:56:31:     ~~~~~~~~~~^
+2026-02-25 13:56:31:         self._impl_obj.wait_for_selector(
+2026-02-25 13:56:31:         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-02-25 13:56:31:             selector=selector, timeout=timeout, state=state, strict=strict
+2026-02-25 13:56:31:             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-02-25 13:56:31:         )
+2026-02-25 13:56:31:         ^
+2026-02-25 13:56:31:     )
+2026-02-25 13:56:31:     ^
+2026-02-25 13:56:31:   File "C:\Users\Ismat Zehra\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_sync_base.py", line 115, in _sync
+2026-02-25 13:56:31:     return task.result()
+2026-02-25 13:56:31:            ~~~~~~~~~~~^^
+2026-02-25 13:56:31:   File "C:\Users\Ismat Zehra\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_page.py", line 419, in wait_for_selector
+2026-02-25 13:56:31:     return await self._main_frame.wait_for_selector(**locals_to_params(locals()))
+2026-02-25 13:56:31:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-02-25 13:56:31:   File "C:\Users\Ismat Zehra\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_frame.py", line 369, in wait_for_selector
+2026-02-25 13:56:31:     await self._channel.send(
+2026-02-25 13:56:31:         "waitForSelector", self._timeout, locals_to_params(locals())
+2026-02-25 13:56:31:     )
+2026-02-25 13:56:31:   File "C:\Users\Ismat Zehra\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_connection.py", line 69, in send
+2026-02-25 13:56:31:     return await self._connection.wrap_api_call(
+2026-02-25 13:56:31:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-02-25 13:56:31:     ...<3 lines>...
+2026-02-25 13:56:31:     )
+2026-02-25 13:56:31:     ^
+2026-02-25 13:56:31:   File "C:\Users\Ismat Zehra\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_connection.py", line 559, in wrap_api_call
+2026-02-25 13:56:31:     raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+2026-02-25 13:56:31: playwright._impl._errors.TargetClosedError: Page.wait_for_selector: Target page, context or browser has been closed
+2026-02-25 13:56:31: Call log:
+2026-02-25 13:56:31:   - waiting for locator("[data-control-name=\"feed_nav_home\"], .feed-identity-module, [aria-label=\"Home\"], .share-box-feed-entry__trigger") to be visible
+2026-02-25 13:56:31: 
+2026-02-25 13:57:04: 2026-02-25 13:57:04  [INFO    ]  LinkedInWatcher � LinkedIn: not logged in. Waiting for manual login ...
+2026-02-25 13:57:04: 2026-02-25 13:57:04  [INFO    ]  LinkedInWatcher �   \u2192 Please sign into LinkedIn in the browser window.
+2026-02-25 13:58:04: 2026-02-25 13:58:04  [ERROR   ]  LinkedInWatcher � LinkedIn login timed out.
+2026-02-25 13:58:44: 2026-02-25 13:58:44  [INFO    ]  LinkedInWatcher � LinkedIn: not logged in. Waiting for manual login ...
+2026-02-25 13:58:44: 2026-02-25 13:58:44  [INFO    ]  LinkedInWatcher �   \u2192 Please sign into LinkedIn in the browser window.
+2026-02-25 13:59:44: 2026-02-25 13:59:44  [ERROR   ]  LinkedInWatcher � LinkedIn login timed out.
+2026-02-25 14:00:37: 2026-02-25 14:00:37  [INFO    ]  LinkedInWatcher � LinkedIn: not logged in. Waiting for manual login ...
+2026-02-25 14:00:37: 2026-02-25 14:00:37  [INFO    ]  LinkedInWatcher �   \u2192 Please sign into LinkedIn in the browser window.
+2026-02-25 14:01:37: 2026-02-25 14:01:37  [ERROR   ]  LinkedInWatcher � LinkedIn login timed out.
+2026-02-25 14:02:12: 2026-02-25 14:02:12  [INFO    ]  LinkedInWatcher � LinkedIn: not logged in. Waiting for manual login ...
+2026-02-25 14:02:12: 2026-02-25 14:02:12  [INFO    ]  LinkedInWatcher �   \u2192 Please sign into LinkedIn in the browser window.
+2026-02-25 14:03:13: 2026-02-25 14:03:13  [ERROR   ]  LinkedInWatcher � LinkedIn login timed out.
+2026-02-25 14:03:54: Traceback (most recent call last):
+2026-02-25 14:03:54:   File "C:\Users\Ismat Zehra\3D Objects\hackathon0\AI_Employee_Vault\watcher\linkedin_watcher.py", line 579, in <module>
+2026-02-25 14:03:54:     LinkedInWatcher(interval=args.interval, once=args.once).start()
+2026-02-25 14:03:54:     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+2026-02-25 14:03:54:   File "C:\Users\Ismat Zehra\3D Objects\hackathon0\AI_Employee_Vault\watcher\linkedin_watcher.py", line 498, in start
+2026-02-25 14:03:54:     page.goto(LINKEDIN_URL, wait_until="domcontentloaded", timeout=PAGE_LOAD_MS)
+2026-02-25 14:03:54:     ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-02-25 14:03:54:   File "C:\Users\Ismat Zehra\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\sync_api\_generated.py", line 9054, in goto
+2026-02-25 14:03:54:     self._sync(
+2026-02-25 14:03:54:     ~~~~~~~~~~^
+2026-02-25 14:03:54:         self._impl_obj.goto(
+2026-02-25 14:03:54:         ^^^^^^^^^^^^^^^^^^^^
+2026-02-25 14:03:54:             url=url, timeout=timeout, waitUntil=wait_until, referer=referer
+2026-02-25 14:03:54:             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-02-25 14:03:54:         )
+2026-02-25 14:03:54:         ^
+2026-02-25 14:03:54:     )
+2026-02-25 14:03:54:     ^
+2026-02-25 14:03:54:   File "C:\Users\Ismat Zehra\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_sync_base.py", line 115, in _sync
+2026-02-25 14:03:54:     return task.result()
+2026-02-25 14:03:54:            ~~~~~~~~~~~^^
+2026-02-25 14:03:54:   File "C:\Users\Ismat Zehra\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_page.py", line 552, in goto
+2026-02-25 14:03:54:     return await self._main_frame.goto(**locals_to_params(locals()))
+2026-02-25 14:03:54:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-02-25 14:03:54:   File "C:\Users\Ismat Zehra\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_frame.py", line 153, in goto
+2026-02-25 14:03:54:     await self._channel.send(
+2026-02-25 14:03:54:         "goto", self._navigation_timeout, locals_to_params(locals())
+2026-02-25 14:03:54:     )
+2026-02-25 14:03:54:   File "C:\Users\Ismat Zehra\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_connection.py", line 69, in send
+2026-02-25 14:03:54:     return await self._connection.wrap_api_call(
+2026-02-25 14:03:54:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-02-25 14:03:54:     ...<3 lines>...
+2026-02-25 14:03:54:     )
+2026-02-25 14:03:54:     ^
+2026-02-25 14:03:54:   File "C:\Users\Ismat Zehra\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_connection.py", line 559, in wrap_api_call
+2026-02-25 14:03:54:     raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+2026-02-25 14:03:54: playwright._impl._errors.Error: Page.goto: net::ERR_ABORTED; maybe frame was detached?
+2026-02-25 14:03:54: Call log:
+2026-02-25 14:03:54:   - navigating to "https://www.linkedin.com/", waiting until "domcontentloaded"
+2026-02-25 14:03:54: 
+2026-02-25 14:04:30: 2026-02-25 14:04:30  [INFO    ]  LinkedInWatcher � LinkedIn: not logged in. Waiting for manual login ...
+2026-02-25 14:04:30: 2026-02-25 14:04:30  [INFO    ]  LinkedInWatcher �   \u2192 Please sign into LinkedIn in the browser window.
+2026-02-25 14:05:30: 2026-02-25 14:05:30  [ERROR   ]  LinkedInWatcher � LinkedIn login timed out.
+2026-02-25 14:06:06: 2026-02-25 14:06:06  [INFO    ]  LinkedInWatcher � LinkedIn: not logged in. Waiting for manual login ...
+2026-02-25 14:06:06: 2026-02-25 14:06:06  [INFO    ]  LinkedInWatcher �   \u2192 Please sign into LinkedIn in the browser window.
+2026-02-25 14:07:06: 2026-02-25 14:07:06  [ERROR   ]  LinkedInWatcher � LinkedIn login timed out.
+2026-02-25 14:08:08: 2026-02-25 14:08:08  [INFO    ]  LinkedInWatcher � LinkedIn: not logged in. Waiting for manual login ...
+2026-02-25 14:08:08: 2026-02-25 14:08:08  [INFO    ]  LinkedInWatcher �   \u2192 Please sign into LinkedIn in the browser window.
+2026-02-25 14:09:14: Traceback (most recent call last):
+2026-02-25 14:09:15:   File "C:\Users\Ismat Zehra\3D Objects\hackathon0\AI_Employee_Vault\watcher\linkedin_watcher.py", line 579, in <module>
+2026-02-25 14:09:15:     LinkedInWatcher(interval=args.interval, once=args.once).start()
+2026-02-25 14:09:15:     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+2026-02-25 14:09:15:   File "C:\Users\Ismat Zehra\3D Objects\hackathon0\AI_Employee_Vault\watcher\linkedin_watcher.py", line 500, in start
+2026-02-25 14:09:15:     if not self._wait_for_login(page):
+2026-02-25 14:09:15:            ~~~~~~~~~~~~~~~~~~~~^^^^^^
+2026-02-25 14:09:15:   File "C:\Users\Ismat Zehra\3D Objects\hackathon0\AI_Employee_Vault\watcher\linkedin_watcher.py", line 246, in _wait_for_login
+2026-02-25 14:09:15:     page.wait_for_selector(
+2026-02-25 14:09:15:     ~~~~~~~~~~~~~~~~~~~~~~^
+2026-02-25 14:09:15:         '[data-control-name="feed_nav_home"], .feed-identity-module, '
+2026-02-25 14:09:15:         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-02-25 14:09:15:         '.share-box-feed-entry__trigger',
+2026-02-25 14:09:15:         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-02-25 14:09:15:         timeout=LOGIN_TIMEOUT_MS,
+2026-02-25 14:09:15:         ^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-02-25 14:09:15:     )
+2026-02-25 14:09:15:     ^
+2026-02-25 14:09:15:   File "C:\Users\Ismat Zehra\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\sync_api\_generated.py", line 8217, in wait_for_selector
+2026-02-25 14:09:15:     self._sync(
+2026-02-25 14:09:15:     ~~~~~~~~~~^
+2026-02-25 14:09:15:         self._impl_obj.wait_for_selector(
+2026-02-25 14:09:15:         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-02-25 14:09:15:             selector=selector, timeout=timeout, state=state, strict=strict
+2026-02-25 14:09:15:             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-02-25 14:09:15:         )
+2026-02-25 14:09:15:         ^
+2026-02-25 14:09:15:     )
+2026-02-25 14:09:15:     ^
+2026-02-25 14:09:15:   File "C:\Users\Ismat Zehra\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_sync_base.py", line 115, in _sync
+2026-02-25 14:09:15:     return task.result()
+2026-02-25 14:09:15:            ~~~~~~~~~~~^^
+2026-02-25 14:09:15:   File "C:\Users\Ismat Zehra\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_page.py", line 419, in wait_for_selector
+2026-02-25 14:09:15:     return await self._main_frame.wait_for_selector(**locals_to_params(locals()))
+2026-02-25 14:09:15:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-02-25 14:09:15:   File "C:\Users\Ismat Zehra\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_frame.py", line 369, in wait_for_selector
+2026-02-25 14:09:15:     await self._channel.send(
+2026-02-25 14:09:15:         "waitForSelector", self._timeout, locals_to_params(locals())
+2026-02-25 14:09:15:     )
+2026-02-25 14:09:15:   File "C:\Users\Ismat Zehra\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_connection.py", line 69, in send
+2026-02-25 14:09:15:     return await self._connection.wrap_api_call(
+2026-02-25 14:09:15:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-02-25 14:09:15:     ...<3 lines>...
+2026-02-25 14:09:15:     )
+2026-02-25 14:09:15:     ^
+2026-02-25 14:09:15:   File "C:\Users\Ismat Zehra\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_connection.py", line 559, in wrap_api_call
+2026-02-25 14:09:15:     raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+2026-02-25 14:09:15: playwright._impl._errors.TargetClosedError: Page.wait_for_selector: Target page, context or browser has been closed
+2026-02-25 14:09:15: Call log:
+2026-02-25 14:09:15:   - waiting for locator("[data-control-name=\"feed_nav_home\"], .feed-identity-module, .share-box-feed-entry__trigger") to be visible
+2026-02-25 14:09:15: 
+2026-02-25 14:09:49: 2026-02-25 14:09:49  [INFO    ]  LinkedInWatcher � LinkedIn: not logged in. Waiting for manual login ...
+2026-02-25 14:09:49: 2026-02-25 14:09:49  [INFO    ]  LinkedInWatcher �   \u2192 Please sign into LinkedIn in the browser window.
+2026-02-25 14:10:49: 2026-02-25 14:10:49  [ERROR   ]  LinkedInWatcher � LinkedIn login timed out.
+2026-02-25 14:11:34: 2026-02-25 14:11:34  [INFO    ]  LinkedInWatcher � LinkedIn: not logged in. Waiting for manual login ...
+2026-02-25 14:11:34: 2026-02-25 14:11:34  [INFO    ]  LinkedInWatcher �   \u2192 Please sign into LinkedIn in the browser window.
+2026-02-25 14:12:34: 2026-02-25 14:12:34  [ERROR   ]  LinkedInWatcher � LinkedIn login timed out.
+2026-02-25 14:13:34: 2026-02-25 14:13:34  [INFO    ]  LinkedInWatcher � LinkedIn: not logged in. Waiting for manual login ...
+2026-02-25 14:13:34: 2026-02-25 14:13:34  [INFO    ]  LinkedInWatcher �   \u2192 Please sign into LinkedIn in the browser window.
+2026-02-25 14:14:34: 2026-02-25 14:14:34  [ERROR   ]  LinkedInWatcher � LinkedIn login timed out.
+2026-02-25 14:15:22: 2026-02-25 14:15:22  [INFO    ]  LinkedInWatcher � LinkedIn: not logged in. Waiting for manual login ...
+2026-02-25 14:15:22: 2026-02-25 14:15:22  [INFO    ]  LinkedInWatcher �   \u2192 Please sign into LinkedIn in the browser window.
+2026-02-25 14:16:22: 2026-02-25 14:16:22  [ERROR   ]  LinkedInWatcher � LinkedIn login timed out.
+2026-02-25 14:16:59: 2026-02-25 14:16:59  [INFO    ]  LinkedInWatcher � LinkedIn: not logged in. Waiting for manual login ...
+2026-02-25 14:16:59: 2026-02-25 14:16:59  [INFO    ]  LinkedInWatcher �   \u2192 Please sign into LinkedIn in the browser window.
+2026-02-25 14:17:59: 2026-02-25 14:17:59  [ERROR   ]  LinkedInWatcher � LinkedIn login timed out.
+2026-02-25 14:18:45: 2026-02-25 14:18:45  [INFO    ]  LinkedInWatcher � LinkedIn: not logged in. Waiting for manual login ...
+2026-02-25 14:18:45: 2026-02-25 14:18:45  [INFO    ]  LinkedInWatcher �   \u2192 Please sign into LinkedIn in the browser window.
+2026-02-25 14:19:45: 2026-02-25 14:19:45  [ERROR   ]  LinkedInWatcher � LinkedIn login timed out.
+2026-02-25 14:20:42: 2026-02-25 14:20:41  [INFO    ]  LinkedInWatcher � LinkedIn: not logged in. Waiting for manual login ...
+2026-02-25 14:20:42: 2026-02-25 14:20:41  [INFO    ]  LinkedInWatcher �   \u2192 Please sign into LinkedIn in the browser window.
+2026-02-25 14:21:41: 2026-02-25 14:21:41  [ERROR   ]  LinkedInWatcher � LinkedIn login timed out.
+2026-02-25 14:22:37: 2026-02-25 14:22:37  [INFO    ]  LinkedInWatcher � LinkedIn: not logged in. Waiting for manual login ...
+2026-02-25 14:22:37: 2026-02-25 14:22:37  [INFO    ]  LinkedInWatcher �   \u2192 Please sign into LinkedIn in the browser window.
+2026-02-25 14:23:37: 2026-02-25 14:23:37  [ERROR   ]  LinkedInWatcher � LinkedIn login timed out.
+2026-02-25 14:24:54: 2026-02-25 14:24:54  [INFO    ]  LinkedInWatcher � LinkedIn: not logged in. Waiting for manual login ...
+2026-02-25 14:24:54: 2026-02-25 14:24:54  [INFO    ]  LinkedInWatcher �   \u2192 Please sign into LinkedIn in the browser window.
+2026-02-25 14:25:54: 2026-02-25 14:25:54  [ERROR   ]  LinkedInWatcher � LinkedIn login timed out.
+2026-02-25 14:26:50: 2026-02-25 14:26:50  [INFO    ]  LinkedInWatcher � LinkedIn: not logged in. Waiting for manual login ...
+2026-02-25 14:26:50: 2026-02-25 14:26:50  [INFO    ]  LinkedInWatcher �   \u2192 Please sign into LinkedIn in the browser window.
+2026-02-25 14:27:51: 2026-02-25 14:27:51  [ERROR   ]  LinkedInWatcher � LinkedIn login timed out.
+2026-02-25 14:28:45: 2026-02-25 14:28:44  [INFO    ]  LinkedInWatcher � LinkedIn: not logged in. Waiting for manual login ...
+2026-02-25 14:28:45: 2026-02-25 14:28:44  [INFO    ]  LinkedInWatcher �   \u2192 Please sign into LinkedIn in the browser window.
+2026-02-25 14:29:44: 2026-02-25 14:29:44  [ERROR   ]  LinkedInWatcher � LinkedIn login timed out.
+2026-02-25 14:30:55: 2026-02-25 14:30:55  [INFO    ]  LinkedInWatcher � LinkedIn: not logged in. Waiting for manual login ...
+2026-02-25 14:30:55: 2026-02-25 14:30:55  [INFO    ]  LinkedInWatcher �   \u2192 Please sign into LinkedIn in the browser window.
+2026-02-25 14:31:51: Traceback (most recent call last):
+2026-02-25 14:31:51:   File "C:\Users\Ismat Zehra\3D Objects\hackathon0\AI_Employee_Vault\watcher\linkedin_watcher.py", line 579, in <module>
+2026-02-25 14:31:51:     LinkedInWatcher(interval=args.interval, once=args.once).start()
+2026-02-25 14:31:51:     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+2026-02-25 14:31:51:   File "C:\Users\Ismat Zehra\3D Objects\hackathon0\AI_Employee_Vault\watcher\linkedin_watcher.py", line 500, in start
+2026-02-25 14:31:51:     if not self._wait_for_login(page):
+2026-02-25 14:31:51:            ~~~~~~~~~~~~~~~~~~~~^^^^^^
+2026-02-25 14:31:51:   File "C:\Users\Ismat Zehra\3D Objects\hackathon0\AI_Employee_Vault\watcher\linkedin_watcher.py", line 246, in _wait_for_login
+2026-02-25 14:31:51:     page.wait_for_selector(
+2026-02-25 14:31:51:     ~~~~~~~~~~~~~~~~~~~~~~^
+2026-02-25 14:31:51:         '[data-control-name="feed_nav_home"], .feed-identity-module, '
+2026-02-25 14:31:51:         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-02-25 14:31:51:         '.share-box-feed-entry__trigger',
+2026-02-25 14:31:51:         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-02-25 14:31:51:         timeout=LOGIN_TIMEOUT_MS,
+2026-02-25 14:31:51:         ^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-02-25 14:31:51:     )
+2026-02-25 14:31:51:     ^
+2026-02-25 14:31:51:   File "C:\Users\Ismat Zehra\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\sync_api\_generated.py", line 8217, in wait_for_selector
+2026-02-25 14:31:51:     self._sync(
+2026-02-25 14:31:51:     ~~~~~~~~~~^
+2026-02-25 14:31:51:         self._impl_obj.wait_for_selector(
+2026-02-25 14:31:51:         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-02-25 14:31:51:             selector=selector, timeout=timeout, state=state, strict=strict
+2026-02-25 14:31:51:             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-02-25 14:31:51:         )
+2026-02-25 14:31:51:         ^
+2026-02-25 14:31:51:     )
+2026-02-25 14:31:51:     ^
+2026-02-25 14:31:51:   File "C:\Users\Ismat Zehra\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_sync_base.py", line 115, in _sync
+2026-02-25 14:31:51:     return task.result()
+2026-02-25 14:31:51:            ~~~~~~~~~~~^^
+2026-02-25 14:31:51:   File "C:\Users\Ismat Zehra\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_page.py", line 419, in wait_for_selector
+2026-02-25 14:31:51:     return await self._main_frame.wait_for_selector(**locals_to_params(locals()))
+2026-02-25 14:31:51:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-02-25 14:31:51:   File "C:\Users\Ismat Zehra\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_frame.py", line 369, in wait_for_selector
+2026-02-25 14:31:51:     await self._channel.send(
+2026-02-25 14:31:51:         "waitForSelector", self._timeout, locals_to_params(locals())
+2026-02-25 14:31:51:     )
+2026-02-25 14:31:51:   File "C:\Users\Ismat Zehra\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_connection.py", line 69, in send
+2026-02-25 14:31:51:     return await self._connection.wrap_api_call(
+2026-02-25 14:31:51:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-02-25 14:31:51:     ...<3 lines>...
+2026-02-25 14:31:51:     )
+2026-02-25 14:31:51:     ^
+2026-02-25 14:31:51:   File "C:\Users\Ismat Zehra\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_connection.py", line 559, in wrap_api_call
+2026-02-25 14:31:51:     raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+2026-02-25 14:31:51: playwright._impl._errors.Error: Page.wait_for_selector: Page crashed
+2026-02-25 14:31:51: Call log:
+2026-02-25 14:31:51:   - waiting for locator("[data-control-name=\"feed_nav_home\"], .feed-identity-module, .share-box-feed-entry__trigger") to be visible
+2026-02-25 14:31:51: 

@@ -1,0 +1,173 @@
+2026-02-25 13:25:20: 2026-02-25 13:25:20  [INFO    ]  LinkedInWatcher � LinkedIn: not logged in. Waiting for manual login ...
+2026-02-25 13:25:20: 2026-02-25 13:25:20  [INFO    ]  LinkedInWatcher �   \u2192 Please sign into LinkedIn in the browser window.
+2026-02-25 13:26:20: 2026-02-25 13:26:20  [ERROR   ]  LinkedInWatcher � LinkedIn login timed out.
+2026-02-25 13:27:53: 2026-02-25 13:27:53  [INFO    ]  LinkedInWatcher � LinkedIn: not logged in. Waiting for manual login ...
+2026-02-25 13:27:53: 2026-02-25 13:27:53  [INFO    ]  LinkedInWatcher �   \u2192 Please sign into LinkedIn in the browser window.
+2026-02-25 13:28:53: 2026-02-25 13:28:53  [ERROR   ]  LinkedInWatcher � LinkedIn login timed out.
+2026-02-25 13:29:41: Traceback (most recent call last):
+2026-02-25 13:29:41:   File "C:\Users\Ismat Zehra\3D Objects\hackathon0\AI_Employee_Vault\watcher\linkedin_watcher.py", line 579, in <module>
+2026-02-25 13:29:41:     LinkedInWatcher(interval=args.interval, once=args.once).start()
+2026-02-25 13:29:41:     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+2026-02-25 13:29:41:   File "C:\Users\Ismat Zehra\3D Objects\hackathon0\AI_Employee_Vault\watcher\linkedin_watcher.py", line 491, in start
+2026-02-25 13:29:41:     browser = pw.chromium.launch_persistent_context(
+2026-02-25 13:29:41:         user_data_dir=str(SESSION_DIR),
+2026-02-25 13:29:41:     ...<2 lines>...
+2026-02-25 13:29:41:         args=["--no-sandbox"],
+2026-02-25 13:29:41:     )
+2026-02-25 13:29:41:   File "C:\Users\Ismat Zehra\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\sync_api\_generated.py", line 14861, in launch_persistent_context
+2026-02-25 13:29:41:     self._sync(
+2026-02-25 13:29:41:     ~~~~~~~~~~^
+2026-02-25 13:29:41:         self._impl_obj.launch_persistent_context(
+2026-02-25 13:29:41:         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-02-25 13:29:41:     ...<50 lines>...
+2026-02-25 13:29:41:         )
+2026-02-25 13:29:41:         ^
+2026-02-25 13:29:41:     )
+2026-02-25 13:29:41:     ^
+2026-02-25 13:29:41:   File "C:\Users\Ismat Zehra\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_sync_base.py", line 115, in _sync
+2026-02-25 13:29:41:     return task.result()
+2026-02-25 13:29:41:            ~~~~~~~~~~~^^
+2026-02-25 13:29:41:   File "C:\Users\Ismat Zehra\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_browser_type.py", line 164, in launch_persistent_context
+2026-02-25 13:29:41:     result = await self._channel.send_return_as_dict(
+2026-02-25 13:29:41:              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-02-25 13:29:41:         "launchPersistentContext", TimeoutSettings.launch_timeout, params
+2026-02-25 13:29:41:         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-02-25 13:29:41:     )
+2026-02-25 13:29:41:     ^
+2026-02-25 13:29:41:   File "C:\Users\Ismat Zehra\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_connection.py", line 83, in send_return_as_dict
+2026-02-25 13:29:41:     return await self._connection.wrap_api_call(
+2026-02-25 13:29:41:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-02-25 13:29:41:     ...<3 lines>...
+2026-02-25 13:29:41:     )
+2026-02-25 13:29:41:     ^
+2026-02-25 13:29:41:   File "C:\Users\Ismat Zehra\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_connection.py", line 559, in wrap_api_call
+2026-02-25 13:29:41:     raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+2026-02-25 13:29:41: playwright._impl._errors.TargetClosedError: BrowserType.launch_persistent_context: Target page, context or browser has been closed
+2026-02-25 13:29:41: Browser logs:
+2026-02-25 13:29:41: 
+2026-02-25 13:29:41: <launching> C:\Users\Ismat Zehra\AppData\Local\ms-playwright\chromium-1208\chrome-win64\chrome.exe --disable-field-trial-config --disable-background-networking --disable-background-timer-throttling --disable-backgrounding-occluded-windows --disable-back-forward-cache --disable-breakpad --disable-client-side-phishing-detection --disable-component-extensions-with-background-pages --disable-component-update --no-default-browser-check --disable-default-apps --disable-dev-shm-usage --disable-extensions --disable-features=AvoidUnnecessaryBeforeUnloadCheckSync,BoundaryEventDispatchTracksNodeRemoval,DestroyProfileOnBrowserClose,DialMediaRouteProvider,GlobalMediaControls,HttpsUpgrades,LensOverlay,MediaRouter,PaintHolding,ThirdPartyStoragePartitioning,Translate,AutoDeElevate,RenderDocument,OptimizationHints --enable-features=CDPScreenshotNewSurface --allow-pre-commit-input --disable-hang-monitor --disable-ipc-flooding-protection --disable-popup-blocking --disable-prompt-on-repost --disable-renderer-backgrounding --force-color-profile=srgb --metrics-recording-only --no-first-run --password-store=basic --use-mock-keychain --no-service-autorun --export-tagged-pdf --disable-search-engine-choice-screen --unsafely-disable-devtools-self-xss-warnings --edge-skip-compat-layer-relaunch --enable-automation --disable-infobars --disable-search-engine-choice-screen --disable-sync --enable-unsafe-swiftshader --no-sandbox --no-sandbox --user-data-dir=C:\Users\Ismat Zehra\3D Objects\hackathon0\AI_Employee_Vault\watcher\sessions\linkedin --remote-debugging-pipe about:blank
+2026-02-25 13:29:41: <launched> pid=12092
+2026-02-25 13:29:41: Call log:
+2026-02-25 13:29:41:   - <launching> C:\Users\Ismat Zehra\AppData\Local\ms-playwright\chromium-1208\chrome-win64\chrome.exe --disable-field-trial-config --disable-background-networking --disable-background-timer-throttling --disable-backgrounding-occluded-windows --disable-back-forward-cache --disable-breakpad --disable-client-side-phishing-detection --disable-component-extensions-with-background-pages --disable-component-update --no-default-browser-check --disable-default-apps --disable-dev-shm-usage --disable-extensions --disable-features=AvoidUnnecessaryBeforeUnloadCheckSync,BoundaryEventDispatchTracksNodeRemoval,DestroyProfileOnBrowserClose,DialMediaRouteProvider,GlobalMediaControls,HttpsUpgrades,LensOverlay,MediaRouter,PaintHolding,ThirdPartyStoragePartitioning,Translate,AutoDeElevate,RenderDocument,OptimizationHints --enable-features=CDPScreenshotNewSurface --allow-pre-commit-input --disable-hang-monitor --disable-ipc-flooding-protection --disable-popup-blocking --disable-prompt-on-repost --disable-renderer-backgrounding --force-color-profile=srgb --metrics-recording-only --no-first-run --password-store=basic --use-mock-keychain --no-service-autorun --export-tagged-pdf --disable-search-engine-choice-screen --unsafely-disable-devtools-self-xss-warnings --edge-skip-compat-layer-relaunch --enable-automation --disable-infobars --disable-search-engine-choice-screen --disable-sync --enable-unsafe-swiftshader --no-sandbox --no-sandbox --user-data-dir=C:\Users\Ismat Zehra\3D Objects\hackathon0\AI_Employee_Vault\watcher\sessions\linkedin --remote-debugging-pipe about:blank
+2026-02-25 13:29:41:   - <launched> pid=12092
+2026-02-25 13:29:41:   - [pid=12092] <gracefully close start>
+2026-02-25 13:29:41:   - [pid=12092] <kill>
+2026-02-25 13:29:41:   - [pid=12092] <will force kill>
+2026-02-25 13:29:41:   - [pid=12092] taskkill stderr: ERROR: The process "12092" not found.
+2026-02-25 13:29:41:   - [pid=12092] <process did exit: exitCode=21, signal=null>
+2026-02-25 13:29:41:   - [pid=12092] starting temporary directories cleanup
+2026-02-25 13:29:41:   - [pid=12092] finished temporary directories cleanup
+2026-02-25 13:29:41:   - [pid=12092] <gracefully close end>
+2026-02-25 13:29:41: 
+2026-02-25 13:30:03: Traceback (most recent call last):
+2026-02-25 13:30:03:   File "C:\Users\Ismat Zehra\3D Objects\hackathon0\AI_Employee_Vault\watcher\linkedin_watcher.py", line 579, in <module>
+2026-02-25 13:30:03:     LinkedInWatcher(interval=args.interval, once=args.once).start()
+2026-02-25 13:30:03:     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+2026-02-25 13:30:03:   File "C:\Users\Ismat Zehra\3D Objects\hackathon0\AI_Employee_Vault\watcher\linkedin_watcher.py", line 491, in start
+2026-02-25 13:30:03:     browser = pw.chromium.launch_persistent_context(
+2026-02-25 13:30:03:         user_data_dir=str(SESSION_DIR),
+2026-02-25 13:30:03:     ...<2 lines>...
+2026-02-25 13:30:03:         args=["--no-sandbox"],
+2026-02-25 13:30:03:     )
+2026-02-25 13:30:03:   File "C:\Users\Ismat Zehra\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\sync_api\_generated.py", line 14861, in launch_persistent_context
+2026-02-25 13:30:03:     self._sync(
+2026-02-25 13:30:03:     ~~~~~~~~~~^
+2026-02-25 13:30:03:         self._impl_obj.launch_persistent_context(
+2026-02-25 13:30:03:         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-02-25 13:30:03:     ...<50 lines>...
+2026-02-25 13:30:03:         )
+2026-02-25 13:30:03:         ^
+2026-02-25 13:30:03:     )
+2026-02-25 13:30:03:     ^
+2026-02-25 13:30:03:   File "C:\Users\Ismat Zehra\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_sync_base.py", line 115, in _sync
+2026-02-25 13:30:03:     return task.result()
+2026-02-25 13:30:03:            ~~~~~~~~~~~^^
+2026-02-25 13:30:03:   File "C:\Users\Ismat Zehra\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_browser_type.py", line 164, in launch_persistent_context
+2026-02-25 13:30:03:     result = await self._channel.send_return_as_dict(
+2026-02-25 13:30:03:              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-02-25 13:30:03:         "launchPersistentContext", TimeoutSettings.launch_timeout, params
+2026-02-25 13:30:03:         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-02-25 13:30:03:     )
+2026-02-25 13:30:03:     ^
+2026-02-25 13:30:03:   File "C:\Users\Ismat Zehra\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_connection.py", line 83, in send_return_as_dict
+2026-02-25 13:30:03:     return await self._connection.wrap_api_call(
+2026-02-25 13:30:03:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-02-25 13:30:03:     ...<3 lines>...
+2026-02-25 13:30:03:     )
+2026-02-25 13:30:03:     ^
+2026-02-25 13:30:03:   File "C:\Users\Ismat Zehra\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_connection.py", line 559, in wrap_api_call
+2026-02-25 13:30:03:     raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+2026-02-25 13:30:03: playwright._impl._errors.TargetClosedError: BrowserType.launch_persistent_context: Target page, context or browser has been closed
+2026-02-25 13:30:03: Browser logs:
+2026-02-25 13:30:03: 
+2026-02-25 13:30:03: <launching> C:\Users\Ismat Zehra\AppData\Local\ms-playwright\chromium-1208\chrome-win64\chrome.exe --disable-field-trial-config --disable-background-networking --disable-background-timer-throttling --disable-backgrounding-occluded-windows --disable-back-forward-cache --disable-breakpad --disable-client-side-phishing-detection --disable-component-extensions-with-background-pages --disable-component-update --no-default-browser-check --disable-default-apps --disable-dev-shm-usage --disable-extensions --disable-features=AvoidUnnecessaryBeforeUnloadCheckSync,BoundaryEventDispatchTracksNodeRemoval,DestroyProfileOnBrowserClose,DialMediaRouteProvider,GlobalMediaControls,HttpsUpgrades,LensOverlay,MediaRouter,PaintHolding,ThirdPartyStoragePartitioning,Translate,AutoDeElevate,RenderDocument,OptimizationHints --enable-features=CDPScreenshotNewSurface --allow-pre-commit-input --disable-hang-monitor --disable-ipc-flooding-protection --disable-popup-blocking --disable-prompt-on-repost --disable-renderer-backgrounding --force-color-profile=srgb --metrics-recording-only --no-first-run --password-store=basic --use-mock-keychain --no-service-autorun --export-tagged-pdf --disable-search-engine-choice-screen --unsafely-disable-devtools-self-xss-warnings --edge-skip-compat-layer-relaunch --enable-automation --disable-infobars --disable-search-engine-choice-screen --disable-sync --enable-unsafe-swiftshader --no-sandbox --no-sandbox --user-data-dir=C:\Users\Ismat Zehra\3D Objects\hackathon0\AI_Employee_Vault\watcher\sessions\linkedin --remote-debugging-pipe about:blank
+2026-02-25 13:30:03: <launched> pid=4756
+2026-02-25 13:30:03: Call log:
+2026-02-25 13:30:03:   - <launching> C:\Users\Ismat Zehra\AppData\Local\ms-playwright\chromium-1208\chrome-win64\chrome.exe --disable-field-trial-config --disable-background-networking --disable-background-timer-throttling --disable-backgrounding-occluded-windows --disable-back-forward-cache --disable-breakpad --disable-client-side-phishing-detection --disable-component-extensions-with-background-pages --disable-component-update --no-default-browser-check --disable-default-apps --disable-dev-shm-usage --disable-extensions --disable-features=AvoidUnnecessaryBeforeUnloadCheckSync,BoundaryEventDispatchTracksNodeRemoval,DestroyProfileOnBrowserClose,DialMediaRouteProvider,GlobalMediaControls,HttpsUpgrades,LensOverlay,MediaRouter,PaintHolding,ThirdPartyStoragePartitioning,Translate,AutoDeElevate,RenderDocument,OptimizationHints --enable-features=CDPScreenshotNewSurface --allow-pre-commit-input --disable-hang-monitor --disable-ipc-flooding-protection --disable-popup-blocking --disable-prompt-on-repost --disable-renderer-backgrounding --force-color-profile=srgb --metrics-recording-only --no-first-run --password-store=basic --use-mock-keychain --no-service-autorun --export-tagged-pdf --disable-search-engine-choice-screen --unsafely-disable-devtools-self-xss-warnings --edge-skip-compat-layer-relaunch --enable-automation --disable-infobars --disable-search-engine-choice-screen --disable-sync --enable-unsafe-swiftshader --no-sandbox --no-sandbox --user-data-dir=C:\Users\Ismat Zehra\3D Objects\hackathon0\AI_Employee_Vault\watcher\sessions\linkedin --remote-debugging-pipe about:blank
+2026-02-25 13:30:03:   - <launched> pid=4756
+2026-02-25 13:30:03:   - [pid=4756] <gracefully close start>
+2026-02-25 13:30:03:   - [pid=4756] <kill>
+2026-02-25 13:30:03:   - [pid=4756] <will force kill>
+2026-02-25 13:30:03:   - [pid=4756] taskkill stderr: ERROR: The process "4756" not found.
+2026-02-25 13:30:03:   - [pid=4756] <process did exit: exitCode=21, signal=null>
+2026-02-25 13:30:03:   - [pid=4756] starting temporary directories cleanup
+2026-02-25 13:30:03:   - [pid=4756] finished temporary directories cleanup
+2026-02-25 13:30:03:   - [pid=4756] <gracefully close end>
+2026-02-25 13:30:03: 
+2026-02-25 13:30:26: Traceback (most recent call last):
+2026-02-25 13:30:26:   File "C:\Users\Ismat Zehra\3D Objects\hackathon0\AI_Employee_Vault\watcher\linkedin_watcher.py", line 579, in <module>
+2026-02-25 13:30:26:     LinkedInWatcher(interval=args.interval, once=args.once).start()
+2026-02-25 13:30:26:     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+2026-02-25 13:30:26:   File "C:\Users\Ismat Zehra\3D Objects\hackathon0\AI_Employee_Vault\watcher\linkedin_watcher.py", line 491, in start
+2026-02-25 13:30:26:     browser = pw.chromium.launch_persistent_context(
+2026-02-25 13:30:26:         user_data_dir=str(SESSION_DIR),
+2026-02-25 13:30:26:     ...<2 lines>...
+2026-02-25 13:30:26:         args=["--no-sandbox"],
+2026-02-25 13:30:26:     )
+2026-02-25 13:30:26:   File "C:\Users\Ismat Zehra\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\sync_api\_generated.py", line 14861, in launch_persistent_context
+2026-02-25 13:30:26:     self._sync(
+2026-02-25 13:30:26:     ~~~~~~~~~~^
+2026-02-25 13:30:26:         self._impl_obj.launch_persistent_context(
+2026-02-25 13:30:26:         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-02-25 13:30:26:     ...<50 lines>...
+2026-02-25 13:30:26:         )
+2026-02-25 13:30:26:         ^
+2026-02-25 13:30:26:     )
+2026-02-25 13:30:26:     ^
+2026-02-25 13:30:26:   File "C:\Users\Ismat Zehra\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_sync_base.py", line 115, in _sync
+2026-02-25 13:30:26:     return task.result()
+2026-02-25 13:30:26:            ~~~~~~~~~~~^^
+2026-02-25 13:30:26:   File "C:\Users\Ismat Zehra\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_browser_type.py", line 164, in launch_persistent_context
+2026-02-25 13:30:26:     result = await self._channel.send_return_as_dict(
+2026-02-25 13:30:26:              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-02-25 13:30:26:         "launchPersistentContext", TimeoutSettings.launch_timeout, params
+2026-02-25 13:30:26:         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-02-25 13:30:26:     )
+2026-02-25 13:30:26:     ^
+2026-02-25 13:30:26:   File "C:\Users\Ismat Zehra\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_connection.py", line 83, in send_return_as_dict
+2026-02-25 13:30:26:     return await self._connection.wrap_api_call(
+2026-02-25 13:30:26:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-02-25 13:30:26:     ...<3 lines>...
+2026-02-25 13:30:26:     )
+2026-02-25 13:30:26:     ^
+2026-02-25 13:30:26:   File "C:\Users\Ismat Zehra\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_connection.py", line 559, in wrap_api_call
+2026-02-25 13:30:26:     raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+2026-02-25 13:30:26: playwright._impl._errors.TargetClosedError: BrowserType.launch_persistent_context: Target page, context or browser has been closed
+2026-02-25 13:30:26: Browser logs:
+2026-02-25 13:30:26: 
+2026-02-25 13:30:26: <launching> C:\Users\Ismat Zehra\AppData\Local\ms-playwright\chromium-1208\chrome-win64\chrome.exe --disable-field-trial-config --disable-background-networking --disable-background-timer-throttling --disable-backgrounding-occluded-windows --disable-back-forward-cache --disable-breakpad --disable-client-side-phishing-detection --disable-component-extensions-with-background-pages --disable-component-update --no-default-browser-check --disable-default-apps --disable-dev-shm-usage --disable-extensions --disable-features=AvoidUnnecessaryBeforeUnloadCheckSync,BoundaryEventDispatchTracksNodeRemoval,DestroyProfileOnBrowserClose,DialMediaRouteProvider,GlobalMediaControls,HttpsUpgrades,LensOverlay,MediaRouter,PaintHolding,ThirdPartyStoragePartitioning,Translate,AutoDeElevate,RenderDocument,OptimizationHints --enable-features=CDPScreenshotNewSurface --allow-pre-commit-input --disable-hang-monitor --disable-ipc-flooding-protection --disable-popup-blocking --disable-prompt-on-repost --disable-renderer-backgrounding --force-color-profile=srgb --metrics-recording-only --no-first-run --password-store=basic --use-mock-keychain --no-service-autorun --export-tagged-pdf --disable-search-engine-choice-screen --unsafely-disable-devtools-self-xss-warnings --edge-skip-compat-layer-relaunch --enable-automation --disable-infobars --disable-search-engine-choice-screen --disable-sync --enable-unsafe-swiftshader --no-sandbox --no-sandbox --user-data-dir=C:\Users\Ismat Zehra\3D Objects\hackathon0\AI_Employee_Vault\watcher\sessions\linkedin --remote-debugging-pipe about:blank
+2026-02-25 13:30:26: <launched> pid=1244
+2026-02-25 13:30:26: Call log:
+2026-02-25 13:30:26:   - <launching> C:\Users\Ismat Zehra\AppData\Local\ms-playwright\chromium-1208\chrome-win64\chrome.exe --disable-field-trial-config --disable-background-networking --disable-background-timer-throttling --disable-backgrounding-occluded-windows --disable-back-forward-cache --disable-breakpad --disable-client-side-phishing-detection --disable-component-extensions-with-background-pages --disable-component-update --no-default-browser-check --disable-default-apps --disable-dev-shm-usage --disable-extensions --disable-features=AvoidUnnecessaryBeforeUnloadCheckSync,BoundaryEventDispatchTracksNodeRemoval,DestroyProfileOnBrowserClose,DialMediaRouteProvider,GlobalMediaControls,HttpsUpgrades,LensOverlay,MediaRouter,PaintHolding,ThirdPartyStoragePartitioning,Translate,AutoDeElevate,RenderDocument,OptimizationHints --enable-features=CDPScreenshotNewSurface --allow-pre-commit-input --disable-hang-monitor --disable-ipc-flooding-protection --disable-popup-blocking --disable-prompt-on-repost --disable-renderer-backgrounding --force-color-profile=srgb --metrics-recording-only --no-first-run --password-store=basic --use-mock-keychain --no-service-autorun --export-tagged-pdf --disable-search-engine-choice-screen --unsafely-disable-devtools-self-xss-warnings --edge-skip-compat-layer-relaunch --enable-automation --disable-infobars --disable-search-engine-choice-screen --disable-sync --enable-unsafe-swiftshader --no-sandbox --no-sandbox --user-data-dir=C:\Users\Ismat Zehra\3D Objects\hackathon0\AI_Employee_Vault\watcher\sessions\linkedin --remote-debugging-pipe about:blank
+2026-02-25 13:30:26:   - <launched> pid=1244
+2026-02-25 13:30:26:   - [pid=1244] <gracefully close start>
+2026-02-25 13:30:26:   - [pid=1244] <kill>
+2026-02-25 13:30:26:   - [pid=1244] <will force kill>
+2026-02-25 13:30:26:   - [pid=1244] taskkill stderr: ERROR: The process "1244" not found.
+2026-02-25 13:30:26:   - [pid=1244] <process did exit: exitCode=21, signal=null>
+2026-02-25 13:30:26:   - [pid=1244] starting temporary directories cleanup
+2026-02-25 13:30:26:   - [pid=1244] finished temporary directories cleanup
+2026-02-25 13:30:26:   - [pid=1244] <gracefully close end>
+2026-02-25 13:30:26: 
+2026-02-25 13:31:16: 2026-02-25 13:31:16  [INFO    ]  LinkedInWatcher � LinkedIn: not logged in. Waiting for manual login ...
+2026-02-25 13:31:16: 2026-02-25 13:31:16  [INFO    ]  LinkedInWatcher �   \u2192 Please sign into LinkedIn in the browser window.

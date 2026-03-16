@@ -1,0 +1,15 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(ls:*)",
+      "Bash(echo python not found in PATH:*)",
+      "Bash(python3:*)",
+      "Bash(cd:*)",
+      "Bash(py:*)",
+      "Bash(python:*)",
+      "Bash(set PYTHONIOENCODING=utf-8:*)",
+      "Bash(head:*)",
+      "Bash(mkdir:*)"
+    ]
+  }
+}
